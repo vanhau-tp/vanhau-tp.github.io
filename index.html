@@ -1,0 +1,291 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mô hình học máy TM-054</title>
+  <!-- <script src="p5.min.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <script src="ml5.min.js" type="text/javascript"></script> -->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js" type="text/javascript"></script>
+</head>
+
+
+
+<body>
+
+
+
+<table style="border-collapse: collapse; width: 100%; height: 46px;" border="0">
+<tbody>
+<tr style="height: 46px;">
+<td><img width: 100% height: 100% src="Banner__TM054.png" alt="ảnh banner" style="height: auto; width: 100%;"></td>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: justify; height: 36px;color: #0000FF; background-color: #00FF00; font-size:18px"><b><marquee>"UỐNG NƯỚC NHỚ NGUỒN, ĂN QUẢ NHỚ KẺ TRỒNG CÂY".         XIN TRI ÂN QUÝ BẬT TIỀN BỐI ĐÃ HẾT MÌNH PHỤNG SỰ VÌ NỀN ĐỘC LẬP - TỰ DO - HÒA BÌNH - THỊNH VƯỢNG CHO TỔ QUỐC, CHO DÂN TỘC</marquee></b></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+<table style="width: 100%; border-collapse: collapse; justify-content: center;table-layout: fixed" border="2"; >
+<tbody>
+<tr>
+<td style="width: 25%; height: 86px;">
+<table style="height: 414px; width: 100%; border-collapse: collapse;" border="0">
+<tbody style="background-color: #e8ffba;">
+<tr style="background-color: #bfb5ff; height: 36px; color: blue;">
+<th style=" text-align: center;">DANH S&Aacute;CH TH&Agrave;NH VI&Ecirc;N NH&Oacute;M</th>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: justify; height: 36px; padding:0px 0px 0px 10px">1. Đặng Văn Hậu - Nh&oacute;m trưởng</td>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: justify; height: 36px; padding:0px 0px 0px 10px">2. Nguyễn Thị Phương L&agrave;nh - Th&agrave;nh vi&ecirc;n</td>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: justify; height: 36px; padding:0px 0px 0px 10px">3. Nguyễn Thị Hồng Hạnh - Th&agrave;nh vi&ecirc;n</td>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: justify; height: 36px; padding:0px 0px 0px 10px">4. Nguyễn Thị &Aacute;nh - Th&agrave;nh vi&ecirc;n</td>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: justify; height: 36px; padding:0px 0px 0px 10px">5. L&ecirc; Thị Hảo - Th&agrave;nh vi&ecirc;n</td>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: justify; height: 36px; padding:0px 0px 0px 10px">6. Trương Thị Việt Linh - Th&agrave;nh vi&ecirc;n</td>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: justify; height: 36px; padding:0px 0px 0px 10px">7. Nguyễn Thị Tr&igrave;nh - Th&agrave;nh vi&ecirc;n</td>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: justify; height: 36px; padding:0px 0px 0px 10px">8. Nguyễn Kim Đ&ocirc;ng - Th&agrave;nh vi&ecirc;n</td>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: justify; height: 36px; padding:0px 0px 0px 10px">9. Nguyễn Th&aacute;i B&igrave;nh - Th&agrave;nh vi&ecirc;n</td>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: justify; height: 36px; padding:0px 0px 0px 10px">10. V&otilde; Như Quỳnh - Th&agrave;nh vi&ecirc;n</td>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: justify; height: 36px; padding:0px 0px 0px 10px">11. Nguyễn Phạm &Aacute;nh Diễm - Th&agrave;nh vi&ecirc;n</td>
+</tr>
+</tbody>
+</table>
+</td> <!-- ket thuc danh sách ten GV -->
+
+
+
+
+<!--SLIDESHOW -->
+<td style="width: 75%;">
+ 
+  <div style="display: flex; justify-content: center;">
+     <html lang="en">
+      <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     </head>
+      
+    <body>
+    <div class="container">
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+ <li data-target="#myCarousel" data-slide-to="3"></li>
+<li data-target="#myCarousel" data-slide-to="4"></li>
+<li data-target="#myCarousel" data-slide-to="5"></li>
+<li data-target="#myCarousel" data-slide-to="6"></li>
+<li data-target="#myCarousel" data-slide-to="7"></li>
+<li data-target="#myCarousel" data-slide-to="8"></li>
+<li data-target="#myCarousel" data-slide-to="9"></li>
+<li data-target="#myCarousel" data-slide-to="10"></li>
+<li data-target="#myCarousel" data-slide-to="11"></li>
+        </ol>
+   
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+     
+    <div class="item active">
+<a href="https://daihoidang.vn/nhan-su/ho-chi-minh-1110.vnp" target="_blank"> 
+     <img src="01-BH.jpg" alt="HCM" style="width:100%; height: 400px;" >
+</a>
+      </div>
+
+     <div class="item">
+<a href="https://daihoidang.vn/nhan-su/tran-phu-1090.vnp" target="_blank"> 
+     <img src="02-TP.jpg" alt="TP" style="width:100%;height: 400px;"></a>
+        </div>
+   
+     <div class="item">
+<a href="https://daihoidang.vn/nhan-su/le-hong-phong-1091.vnp" target="_blank"> 
+     <img src="03-LHP.jpg" alt="LHP" style="width:100%;height: 400px;"></a>
+     </div>
+     
+	<div class="item">
+<a href="https://daihoidang.vn/nhan-su/ha-huy-tap-1092.vnp" target="_blank"> 
+     <img src="04-HHT.jpg" alt="HHT" style="width:100%;height: 400px;"></a>
+     </div>
+
+	<div class="item">
+<a href="https://daihoidang.vn/nhan-su/nguyen-van-cu-1093.vnp" target="_blank"> 
+     <img src="05-NVC.jpg" alt="NVC" style="width:100%;height: 400px;"></a>
+     </div>
+
+	<div class="item">
+<a href="https://daihoidang.vn/nhan-su/truong-chinh-1094.vnp" target="_blank"> 
+     <img src="06-TC.jpg" alt="TC" style="width:100%;height: 400px;"></a>
+     </div>
+
+	<div class="item">
+<a href="https://daihoidang.vn/nhan-su/le-duan-1095.vnp" target="_blank"> 
+     <img src="07-LD.jpg" alt="LD" style="width:100%;height: 400px;"></a>
+     </div>
+
+	<div class="item">
+<a href="https://daihoidang.vn/nhan-su/nguyen-van-linh-1096.vnp" target="_blank"> 
+     <img src="08-NVL.jpg" alt="NVL" style="width:100%;height: 400px;"></a>
+     </div>
+
+	<div class="item">
+<a href="https://daihoidang.vn/nhan-su/do-muoi-1097.vnp" target="_blank"> 
+     <img src="09-DM.jpg" alt="DM" style="width:100%;height: 400px;"></a>
+     </div>
+
+	<div class="item">
+<a href="https://daihoidang.vn/nhan-su/le-kha-phieu-1098.vnp" target="_blank"> 
+     <img src="10-LKP.jpg" alt="LKP" style="width:100%;height: 400px;"></a>
+     </div>
+
+	<div class="item">
+<a href="https://daihoidang.vn/nhan-su/do-muoi-1097.vnp" target="_blank"> 
+     <img src="11-NDM.jpg" alt="NDM" style="width:100%;height: 400px;"></a>
+     </div>
+
+	<div class="item">
+<a href="https://daihoidang.vn/nhan-su/nguyen-phu-trong-922.vnp" target="_blank"> 
+     <img src="12-NPT.jpg" alt="NPT" style="width:100%;height: 400px;"></a>
+     </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
+</div>
+</body>
+</html>
+</dir>  
+  
+</td> <!-- ket thuc slideshow -->
+
+</tr>
+</tbody>
+</table>
+
+<table style="border-collapse: collapse; width: 100%; height: 46px;" border="0">
+<tbody>
+<tr style="height: 36px;">
+<td style="text-align: CENTER; height: 36px;color: #0000FF; background-color: #00FF00; font-size:18px;"><b>--- NHẬN DẠNG CÁC VỊ TỔNG BÍ THƯ Ở ĐÂY ---</b></td>
+</tr>
+</tbody>
+</table>
+
+
+
+<!-- CAMERA -->
+<table style="width: 100%; border-collapse: collapse; justify-content: center;table-layout: fixed" border="2"; >
+<tbody>
+<tr>  
+<td style="width: 100%;">
+
+<script type="text/javascript";>
+  // Classifier Variable
+  let classifier;
+  // Model URL
+  let imageModelURL = 'https://teachablemachine.withgoogle.com/models/w9Xy9mv7g/';
+  
+  // Video
+  let video;
+  let flippedVideo;
+  // To store the classification
+  let label = "";
+
+  // Load the model first
+  function preload() {
+    classifier = ml5.imageClassifier(imageModelURL + 'model.json');
+  }
+
+  function setup() {
+    createCanvas(500, 400);
+    // Create the video
+    video = createCapture(VIDEO);
+    video.size(500, 400);
+    video.hide();
+
+    flippedVideo = ml5.flipImage(video);
+    // Start classifying
+    classifyVideo();
+  }
+
+  function draw() {
+    background(0);
+    // Draw the video
+    image(flippedVideo, 0, 0);
+
+    // Draw the label
+    fill(255);
+    textSize(25);
+    textAlign(CENTER);
+ 
+    text(label, width / 2, height - 4);
+  }
+
+  // Get a prediction for the current video frame
+  function classifyVideo() {
+    flippedVideo = ml5.flipImage(video)
+    classifier.classify(flippedVideo, gotResult);
+    flippedVideo.remove();
+
+  }
+
+  // When we get a result
+  function gotResult(error, results) {
+    // If there is an error
+    if (error) {
+      console.error(error);
+      return;
+    }
+    // The results are in an array ordered by confidence.
+    // console.log(results[0]);
+    label = results[0].label;
+    // Classifiy again!
+    classifyVideo();
+  }
+</script>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+ </body>
+</html>
